@@ -69,7 +69,7 @@ def handle_request(file_path):
             # Создаем директории в пути, если их нет
             os.makedirs(os.path.dirname(absolute_path), exist_ok=True)
 
-            # Сохраняем файл - ИСПРАВИТЬ ЭТУ ЧАСТЬ
+            # Сохраняем файл 
             with open(absolute_path, 'wb') as f:
                 # request.data может быть пустым для form data
                 if request.data:
